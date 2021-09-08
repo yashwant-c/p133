@@ -1,0 +1,45 @@
+<html>
+<head>
+
+	<title>Object Detection</title>
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+  
+    <script src="https://unpkg.com/ml5@latest/dist/ml5.min.js"></script>
+    
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+<center>
+    <h1 class = "btn btn-danger" style = "font-size: 23px;">Multiple Object Identification</h1>
+    <br><br>
+    <h3 class = "btn btn-primary" style = "font-size: 23px; box-shadow: 5px 5px 5px black;">Instructions: Click the buttons below to view various objects being identified.</h3>
+    <br><br>
+    
+  <div id = "container_of_both" style = "width: 800px;">
+    <div id = "right_div" style = "float: right; ">
+      <img src = "cup_icon.png"  onclick = "cup_page()" style = "box-shadow: 5px 5px 5px black; border-radius: 50px; width: 200px; height: 200px;">
+      <br><br><br><br><br>
+      
+    </div>
+
+    <img src = "water_bottel_icon.jpeg" onclick = "waterbottle_page()" style = "box-shadow: 5px 5px 5px black; border-radius: 50px; width: 200px; height: 200px; margin-top: 100px;">
+    
+    <div id = "left_div" style = "float: left;">
+      <img src = "bed_icon.jpg" onclick = "multipleObjects_page()" style = "box-shadow: 5px 5px 5px black; border-radius: 50px; width: 200px; height: 200px;">
+      <br><br><br><br><br>
+     
+    </div>
+  </div>
+</center>
+</body>
+
+<script src = "homepage.js"></script>
+
+</html>
